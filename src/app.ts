@@ -2,7 +2,7 @@ import express from "express";
 import path from "path";
 
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 app.use(express.static(path.resolve("src/client")));
 app.use(express.static(path.resolve("dist/client")));
