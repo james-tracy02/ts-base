@@ -18,7 +18,6 @@
     "typescript": "^4.5.5"
   },
   "scripts": {
-    "prebuild": "npm run lint",
     "lint": "eslint -c .eslintrc.cjs --ext .ts ./src",
     "build": "tsc",
     "prestart": "npm run build",
